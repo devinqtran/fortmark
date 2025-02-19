@@ -1,11 +1,12 @@
-/* styles.css */
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -18,100 +19,104 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 header nav ul li {
-    margin-right: 20px;
+    display: inline;
 }
 
 header nav a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-}
-
+/* Hero Section */
 .hero {
-    background-image: linear-gradient(to bottom, #070bfa, #555);
-    background-size: 100% 300px;
-    background-position: 0% 100%;
+    background: linear-gradient(to bottom, #078dfa, #555);
+    color: #fff;
     height: 300px;
     display: flex;
+    flex-direction: column;  /* Ensures h1 is above h2 */
     justify-content: center;
     align-items: center;
-    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero p {
-    font-size: 18px;
+.hero h2 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: normal;
 }
 
-.benchmarks {
-    margin-top: 20px;
+/* About Section */
+.about, .hardware-form, .fps-estimate {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.benchmarks table {
-    border-collapse: collapse;
-    width: 100%;
+.about h2, .hardware-form h2, .fps-estimate h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
-.benchmarks th, .benchmarks td {
-    border: 1px solid #ddd;
+/* Form Styles */
+.hardware-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hardware-form label {
+    font-weight: bold;
+}
+
+.hardware-form select,
+.hardware-form button {
     padding: 10px;
-    text-align: left;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.compare {
-    margin-top: 20px;
+.hardware-form button {
+    background-color: #070bfa;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
 }
 
-.compare form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.hardware-form button:hover {
+    background-color: #0508c5;
 }
 
-.compare label {
-    margin-bottom: 10px;
+/* Estimated FPS */
+.fps-estimate p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
 }
 
-.compare select {
-    margin-bottom: 20px;
-}
-
-.submit-results {
-    margin-top: 20px;
-}
-
-.submit-results form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.submit-results label {
-    margin-bottom: 10px;
-}
-
-.submit-results input {
-    margin-bottom: 20px;
-}
-
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
     padding: 1em;
     text-align: center;
-    clear: both;
+    margin-top: 40px;
 }

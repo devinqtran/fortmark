@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Hardware</title>
+    <link rel="stylesheet" href="../css/fortmark.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="compare.html">Compare Hardware</a></li>
+            <li><a href="submit.html">Submit Benchmark</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="compare-section">
+    <h2>Compare Hardware Performance</h2>
+    
+    <div class="comparison-form">
+        <label for="cpu1">Select CPU 1:</label>
+        <select id="cpu1"></select>
+
+        <label for="gpu1">Select GPU 1:</label>
+        <select id="gpu1"></select>
+
+        <label for="cpu2">Select CPU 2:</label>
+        <select id="cpu2"></select>
+
+        <label for="gpu2">Select GPU 2:</label>
+        <select id="gpu2"></select>
+
+        <button onclick="compareHardware()">Compare</button>
+    </div>
+
+    <canvas id="fpsChart"></canvas>
+</section>
+
+<footer>
+    <p>© 2025 FPS Benchmark Tool</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
