@@ -1,0 +1,116 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, #333, #555);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.benchmarks {
+    margin-top: 20px;
+}
+
+.benchmarks table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.benchmarks th, .benchmarks td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.compare {
+    margin-top: 20px;
+}
+
+.compare form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compare label {
+    margin-bottom: 10px;
+}
+
+.compare select {
+    margin-bottom: 20px;
+}
+
+.submit-results {
+    margin-top: 20px;
+}
+
+.submit-results form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-results label {
+    margin-bottom: 10px;
+}
+
+.submit-results input {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
