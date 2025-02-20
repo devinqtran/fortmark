@@ -5,46 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare Hardware</title>
     <link rel="stylesheet" href="../css/fortmark.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
-<header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="compare.html">Compare Hardware</a></li>
-            <li><a href="../html/submit.html">Submit Benchmark</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="compare-section">
-    <h2>Compare Hardware Performance</h2>
-    
-    <div class="comparison-form">
-        <label for="cpu1">Select CPU 1:</label>
-        <select id="cpu1"></select>
-
-        <label for="gpu1">Select GPU 1:</label>
-        <select id="gpu1"></select>
-
-        <label for="cpu2">Select CPU 2:</label>
-        <select id="cpu2"></select>
-
-        <label for="gpu2">Select GPU 2:</label>
-        <select id="gpu2"></select>
-
-        <button onclick="compareHardware()">Compare</button>
-    </div>
-
-    <canvas id="fpsChart"></canvas>
-</section>
-
-<footer>
-    <p>© 2025 FPS Benchmark Tool</p>
-</footer>
-
-<script src="scripts.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="compare.html">Compare Hardware</a></li>
+                <li><a href="../html/submit.html">Submit Benchmark</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="compare-form">
+            <h2>Compare Hardware</h2>
+            <form id="compare-form">
+                <label for="cpu1">CPU 1:</label>
+                <select id="cpu1" name="cpu1">
+                    <option value="">Select CPU</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="gpu1">GPU 1:</label>
+                <select id="gpu1" name="gpu1">
+                    <option value="">Select GPU</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="ram1">RAM 1:</label>
+                <select id="ram1" name="ram1">
+                    <option value="">Select RAM</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="cpu2">CPU 2:</label>
+                <select id="cpu2" name="cpu2">
+                    <option value="">Select CPU</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="gpu2">GPU 2:</label>
+                <select id="gpu2" name="gpu2">
+                    <option value="">Select GPU</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="ram2">RAM 2:</label>
+                <select id="ram2" name="ram2">
+                    <option value="">Select RAM</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <button id="compare-hardware">Compare</button>
+            </form>
+        </section>
+        <section class="comparison-results">
+            <h2>Comparison Results:</h2>
+            <p id="comparison-results"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Fortmark</p>
+    </footer>
+    <script src="../js/compare.js"></script>
 </body>
 </html>

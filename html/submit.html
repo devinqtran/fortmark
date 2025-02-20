@@ -7,40 +7,60 @@
     <link rel="stylesheet" href="../css/fortmark.css">
 </head>
 <body>
-
-<header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/compare.html">Compare Hardware</a></li>
-            <li><a href="submit.html">Submit Benchmark</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="benchmark-form">
-    <h2>Submit Your Benchmark</h2>
-    <form id="benchmarkForm">
-        <label for="cpu">CPU:</label>
-        <input type="text" id="cpu" name="cpu" required>
-
-        <label for="gpu">GPU:</label>
-        <input type="text" id="gpu" name="gpu" required>
-
-        <label for="game">Game:</label>
-        <input type="text" id="game" name="game" required>
-
-        <label for="fps">Average FPS:</label>
-        <input type="number" id="fps" name="fps" required>
-
-        <button type="submit">Submit Benchmark</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2025 FPS Benchmark Tool</p>
-</footer>
-
-<script src="scripts.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/compare.html">Compare Hardware</a></li>
+                <li><a href="submit.html">Submit Benchmark</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="submit-form">
+            <h2>Submit Benchmark</h2>
+            <form id="submit-form">
+                <label for="cpu">CPU:</label>
+                <select id="cpu" name="cpu">
+                    <option value="">Select CPU</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="gpu">GPU:</label>
+                <select id="gpu" name="gpu">
+                    <option value="">Select GPU</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="ram">RAM:</label>
+                <select id="ram" name="ram">
+                    <option value="">Select RAM</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="resolution">Resolution:</label>
+                <select id="resolution" name="resolution">
+                    <option value="1080p">1080p (1920x1080)</option>
+                    <option value="1440p">1440p (2560x1440)</option>
+                    <option value="2160p">2160p (3840x2160)</option>
+                </select>
+                <label for="graphics-preset">Graphics Preset:</label>
+                <select id="graphics-preset" name="graphics-preset">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="epic">Epic</option>
+                </select>
+                <label for="fps">FPS:</label>
+                <input type="number" id="fps" name="fps">
+                <button id="submit-benchmark">Submit</button>
+            </form>
+        </section>
+        <section class="submission-results">
+            <h2>Submission Results:</h2>
+            <p id="submission-results"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Fortmark</p>
+    </footer>
+    <script src="../js/submit.js"></script>
 </body>
 </html>
