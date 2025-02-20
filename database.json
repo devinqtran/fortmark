@@ -1,0 +1,50 @@
+[
+    {
+        "cpu": "Intel Core i5",
+        "gpu": "NVIDIA GeForce GTX 1660",
+        "ram": "16 GB",
+        "resolution": "1080p",
+        "graphicsPreset": "medium",
+        "estimatedFps": 60
+    },
+    {
+        "cpu": "AMD Ryzen 5",
+        "gpu": "AMD Radeon RX 5600 XT",
+        "ram": "16 GB",
+        "resolution": "1080p",
+        "graphicsPreset": "medium",
+        "estimatedFps": 55
+    },
+    {
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA GeForce RTX 3060",
+        "ram": "16 GB",
+        "resolution": "1440p",
+        "graphicsPreset": "high",
+        "estimatedFps": 70
+    },
+    {
+        "cpu": "AMD Ryzen 7",
+        "gpu": "AMD Radeon RX 6700 XT",
+        "ram": "16 GB",
+        "resolution": "1440p",
+        "graphicsPreset": "high",
+        "estimatedFps": 65
+    },
+    {
+        "cpu": "Intel Core i9",
+        "gpu": "NVIDIA GeForce RTX 3080",
+        "ram": "32 GB",
+        "resolution": "4K",
+        "graphicsPreset": "epic",
+        "estimatedFps": 80
+    },
+    {
+        "cpu": "AMD Ryzen 9",
+        "gpu": "AMD Radeon RX 6900 XT",
+        "ram": "32 GB",
+        "resolution": "4K",
+        "graphicsPreset": "epic",
+        "estimatedFps": 75
+    }
+]
