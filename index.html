@@ -25,7 +25,9 @@
             <h2>About Fortmark</h2>
             <p>Fortmark is a tool designed to help Fortnite players estimate their in-game FPS based on their hardware and settings. By inputting your CPU, GPU, RAM, resolution, and graphics preset, you can get an estimate of how well your system will perform in Fortnite.</p>
         </section>
-            <section class="hardware-form">
+
+        <!-- Hardware Form Section -->
+        <section class="hardware-form">
             <h2>Enter Your Hardware and Settings</h2>
             <form id="hardware-form">
                 <label for="cpu">CPU:</label>
@@ -33,40 +35,45 @@
                     <option value="">Select CPU</option>
                     <!-- Options will be populated dynamically -->
                 </select>
+
                 <label for="gpu">GPU:</label>
                 <select id="gpu" name="gpu">
                     <option value="">Select GPU</option>
                     <!-- Options will be populated dynamically -->
                 </select>
+
                 <label for="ram">RAM:</label>
                 <select id="ram" name="ram">
                     <option value="">Select RAM</option>
                     <!-- Options will be populated dynamically -->
                 </select>
+
                 <label for="resolution">Resolution:</label>
                 <select id="resolution" name="resolution">
-                    <option value="1080p">1080p (1920x1080)</option>
-                    <option value="1440p">1440p (2560x1440)</option>
-                    <option value="2160p">2160p (3840x2160)</option>
+                    <!-- Options will be populated dynamically -->
                 </select>
+
                 <label for="graphics-preset">Graphics Preset:</label>
                 <select id="graphics-preset" name="graphics-preset">
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                    <option value="epic">Epic</option>
+                    <!-- Options will be populated dynamically -->
                 </select>
-                <button id="estimate-fps">Estimate FPS</button>
+
+                <button type="submit">Estimate FPS</button>
             </form>
         </section>
+
+        <!-- FPS Estimate Section -->
         <section class="fps-estimate">
             <h2>Estimated FPS:</h2>
             <p id="estimated-fps"></p>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Fortmark</p>
     </footer>
+
+    <!-- Include your fortmark.js file that contains the JS logic -->
     <script src="js/fortmark.js"></script>
 </body>
 </html>
