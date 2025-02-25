@@ -2,7 +2,9 @@ from scripts import validate
 from scripts import scraping
 from scripts import connect
 
-# Use the functions
-validate.validate_data()
-scraping.scrape_data()
-connect.connect_to_database()
+def main():
+    url = input("Enter the URL to scrape: ")
+    scraping.scrape_data(url)
+
+if __name__ == "__main__":
+    main()
